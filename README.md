@@ -1,8 +1,7 @@
 # Machine-Learning-Model-Training
 
-# This is Yolov3 training kit. I have train my own model based on darknet method using yolov3-tiny and yolov3 only.
-This model is based on my Hand Gesture dataset.
-
+# This is Yolov3 training kit. I have train my own model based on darknet method using yolov3-tiny and yolov3 only. This model is based on my Hand Gesture dataset.
+# Refer to https://drive.google.com/drive/u/0/folders/1_u7sYmGGpUc6mRXlxHYOc2filP8GSvay for Complete Kit
 Train model step:
 a. Login into google colab and mount jupyterlab it into google drive
 b. In google drive create following folder:
