@@ -26,7 +26,7 @@ b. In google drive create following folder:
       ZED_CAMERA_v2_8=0
   10. Then go into cfg and edit yolov3-tiny.cfg (We'training yolov3-tiny pre-trained model)
       For Training we have to uncomment
-      # Training
+      Training
       batch=64
       subdivisions=16
       
@@ -49,12 +49,12 @@ b. In google drive create following folder:
       !darknet/darknet detector train custom_data/labelled_data.data darknet/cfg/yolov3-tiny.cfg custom_weight/yolov3-tiny.conv.11 -dont_show
   15. Wait for about 4~5 hours of training
   16. Once completed, edit and comment yolov3-tiny.cfg Training
-      # Training
+      #Training
       #batch=64
       #subdivisions=16
       
       Uncomment to the the model
-      # Testing
+      #Testing
       batch=1
       subdivisions=1
       
