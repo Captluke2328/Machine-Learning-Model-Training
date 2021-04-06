@@ -2,8 +2,14 @@ import cv2
 import numpy as np
 
 net = cv2.dnn.readNetFromDarknet(r"C:\Users\jlukas\Desktop\My Projects\MachineLearning\Custom_Train_Model-Detect_Hand_Gesture-Final\Final_Custom_Working_Model_DetectMy_Hand_Yolov3-Tiny\yolov3-tiny_myhand.cfg", r"C:\Users\jlukas\Desktop\My Projects\MachineLearning\Custom_Train_Model-Detect_Hand_Gesture-Final\Final_Custom_Working_Model_DetectMy_Hand_Yolov3-Tiny\yolov3-tiny_myhand_last.weights")
+
+## With CPU
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+
+## With CUDA
+net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
+net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 
 classes = ['right', 'left', 'stop', 'up', 'down']
 cap = cv2.VideoCapture(0)
